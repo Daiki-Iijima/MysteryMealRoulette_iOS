@@ -13,6 +13,9 @@
 		0414376B2AC5B7C600AFC7AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041437692AC5B7C600AFC7AF /* Main.storyboard */; };
 		0414376D2AC5B7C700AFC7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0414376C2AC5B7C700AFC7AF /* Assets.xcassets */; };
 		041437702AC5B7C700AFC7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0414376E2AC5B7C700AFC7AF /* LaunchScreen.storyboard */; };
+		041437782AC7438800AFC7AF /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041437772AC7438800AFC7AF /* PlacesService.swift */; };
+		046070D52AC76649008D7D1B /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046070D42AC76649008D7D1B /* ApiKey.swift */; };
+		B8B184DC4A52B65618340075 /* libPods-MysteryMealRoulette.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8582BE8F850A50417EA5593E /* libPods-MysteryMealRoulette.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		0414376C2AC5B7C700AFC7AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0414376F2AC5B7C700AFC7AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041437712AC5B7C700AFC7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041437772AC7438800AFC7AF /* PlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
+		046070D42AC76649008D7D1B /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		1D0323D69CA77BE15ED1517B /* Pods-MysteryMealRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteryMealRoulette.release.xcconfig"; path = "Target Support Files/Pods-MysteryMealRoulette/Pods-MysteryMealRoulette.release.xcconfig"; sourceTree = "<group>"; };
+		1DB9912910C389D3ACD7F9E5 /* Pods-MysteryMealRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteryMealRoulette.debug.xcconfig"; path = "Target Support Files/Pods-MysteryMealRoulette/Pods-MysteryMealRoulette.debug.xcconfig"; sourceTree = "<group>"; };
+		8582BE8F850A50417EA5593E /* libPods-MysteryMealRoulette.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteryMealRoulette.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B184DC4A52B65618340075 /* libPods-MysteryMealRoulette.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				041437622AC5B7C600AFC7AF /* MysteryMealRoulette */,
 				041437612AC5B7C600AFC7AF /* Products */,
+				E8CC89DF9B97BF9546D83612 /* Pods */,
+				3E808C408ABC0C08AE4409CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				0414376C2AC5B7C700AFC7AF /* Assets.xcassets */,
 				0414376E2AC5B7C700AFC7AF /* LaunchScreen.storyboard */,
 				041437712AC5B7C700AFC7AF /* Info.plist */,
+				041437772AC7438800AFC7AF /* PlacesService.swift */,
+				046070D42AC76649008D7D1B /* ApiKey.swift */,
 			);
 			path = MysteryMealRoulette;
+			sourceTree = "<group>";
+		};
+		3E808C408ABC0C08AE4409CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8582BE8F850A50417EA5593E /* libPods-MysteryMealRoulette.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8CC89DF9B97BF9546D83612 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9912910C389D3ACD7F9E5 /* Pods-MysteryMealRoulette.debug.xcconfig */,
+				1D0323D69CA77BE15ED1517B /* Pods-MysteryMealRoulette.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041437742AC5B7C700AFC7AF /* Build configuration list for PBXNativeTarget "MysteryMealRoulette" */;
 			buildPhases = (
+				E1397C985D41AE3CB9919336 /* [CP] Check Pods Manifest.lock */,
 				0414375C2AC5B7C600AFC7AF /* Sources */,
 				0414375D2AC5B7C600AFC7AF /* Frameworks */,
 				0414375E2AC5B7C600AFC7AF /* Resources */,
+				16CA6AC51CB66B956F7985BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16CA6AC51CB66B956F7985BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MysteryMealRoulette/Pods-MysteryMealRoulette-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MysteryMealRoulette/Pods-MysteryMealRoulette-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MysteryMealRoulette/Pods-MysteryMealRoulette-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1397C985D41AE3CB9919336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MysteryMealRoulette-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0414375C2AC5B7C600AFC7AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046070D52AC76649008D7D1B /* ApiKey.swift in Sources */,
 				041437682AC5B7C600AFC7AF /* ViewController.swift in Sources */,
 				041437642AC5B7C600AFC7AF /* AppDelegate.swift in Sources */,
 				041437662AC5B7C600AFC7AF /* SceneDelegate.swift in Sources */,
+				041437782AC7438800AFC7AF /* PlacesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +363,14 @@
 		};
 		041437752AC5B7C700AFC7AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB9912910C389D3ACD7F9E5 /* Pods-MysteryMealRoulette.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49BQT24CU7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MysteryMealRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,6 +378,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +394,14 @@
 		};
 		041437762AC5B7C700AFC7AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0323D69CA77BE15ED1517B /* Pods-MysteryMealRoulette.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49BQT24CU7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MysteryMealRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +409,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
